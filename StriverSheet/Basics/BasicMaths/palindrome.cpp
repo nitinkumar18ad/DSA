@@ -22,4 +22,6 @@ int main(){
         cout<<"True";
     else
         cout<<"False";
+
+    // cout<<Palindrome(n);
 }
