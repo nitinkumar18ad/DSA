@@ -12,6 +12,8 @@ using namespace std;
 //     return ans;
 //     }
 
+
+
 //Optimal:
 int gcd(int a,int b){
     while(b!=0){
