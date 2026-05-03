@@ -12,8 +12,6 @@ void rev(int arr[],int left,int right){
 
 int main(){
     int n=5;
-    cout<<"Enter n:";
-    cin>>n;
     int arr[n]={1,2,3,4,5};
 
     rev(arr,0,n-1);
