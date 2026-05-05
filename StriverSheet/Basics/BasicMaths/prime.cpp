@@ -2,30 +2,30 @@
 using namespace std;
 
 //Optimal
-// bool prime(int n){
-
-//     if(n<=1) return false;
-
-//     for(int i = 2; i*i<=n; i++){
-//         if(n%i == 0){
-//             return false;
-//         }
-//     }
-//     return true;
-
-// }
-
-//bruteForce 
 bool prime(int n){
+
     if(n<=1) return false;
 
-    for(int i = 2;i<n;i++){
+    for(int i = 2; i*i<=n; i++){
         if(n%i == 0){
             return false;
         }
-        return true;
     }
+    return true;
+
 }
+
+//bruteForce 
+// bool prime(int n){
+//     if(n<=1) return false;
+
+//     for(int i = 2;i<n;i++){
+//         if(n%i == 0){
+//             return false;
+//         }
+//         return true;
+//     }
+// }
 
 int main(){
     int n;
