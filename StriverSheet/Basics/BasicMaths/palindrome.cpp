@@ -23,5 +23,5 @@ int main(){
     else
         cout<<"False";
 
-    // cout<<Palindrome(n);
+    
 }
