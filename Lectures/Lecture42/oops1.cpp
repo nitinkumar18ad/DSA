@@ -10,6 +10,22 @@ class Hero {
     public:
     char level;
 
+    Hero(){
+        cout<<"Constructor Called"<<endl;
+    }
+
+
+    //Parametrized Constructor
+    Hero(int health){
+        cout<<"this ->"<< this <<endl;
+        this -> health = health;
+    }
+
+    Hero(int health,char level){
+        this -> level = level;
+        this -> health = health;
+    }
+
 
     int getHealth(){
         return health;
@@ -28,14 +44,48 @@ class Hero {
 
 int main(){
 
-    Hero ramesh;
-    cout<<"health:"<< ramesh.getHealth() <<endl;
-    ramesh.setHealth(90);
-    ramesh.level = 'A';
-    cout<<"Size:"<<sizeof(ramesh)<<endl;
+    //Object Created Statistically
+    Hero ramesh(10);
+    // cout<< "Address of ramesh "<< &ramesh<<endl;
+    // ramesh.getHealth(); 
 
-    cout<<"Health is:"<< ramesh.getHealth() << endl;
-    cout<<"Level is:"<< ramesh.level << endl;
+    //Dynamically
+    Hero *h = new Hero();
+
+    Hero(69,'B');
+
+
+
+    /*
+    //Statica allocation
+    Hero a;
+    a.setHealth(80);
+    a.setLevel('B');
+    cout<< "level is "<<a.level <<endl;
+    cout<<"health is "<<a.getHealth()<<endl;
+
+    //Dynamic allocation
+    Hero *b = new Hero;
+    b->setHealth(71);
+    b->setLevel('C');
+    cout<< "level is "<<(*b).level <<endl;
+    cout<<"health is "<<(*b).getHealth()<<endl;
+
+    cout<< "level is "<< b -> level <<endl;
+    cout<<"health is "<< b -> getHealth()<<endl;
+    */
+
+    // Hero ramesh;
+    // cout<<"health:"<< ramesh.getHealth() <<endl;
+    // ramesh.setHealth(90);
+
+    // ramesh.level = 'A';
+
+    // cout<<"Size:"<<sizeof(ramesh)<<endl;
+
+
+    // cout<<"Health is:"<< ramesh.getHealth() << endl;
+    // cout<<"Level is:"<< ramesh.level << endl;
 
 
 }
