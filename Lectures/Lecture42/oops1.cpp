@@ -10,8 +10,10 @@ class Hero {
     public:
     char level;
 
+
+    //Simple/Default Constructor
     Hero(){
-        cout<<"Constructor Called"<<endl;
+        cout<<"Simple/Default Constructor Called"<<endl;
     }
 
 
@@ -24,6 +26,19 @@ class Hero {
     Hero(int health,char level){
         this -> level = level;
         this -> health = health;
+    }
+
+
+    //Copy constructor
+    Hero(Hero& temp){
+        cout<<"Copy constructor called"<<endl;
+        this -> health = temp.health;
+        this -> level = temp.level;
+    }
+
+    void print(){
+        cout<<"Health:"<< this->health<<endl;
+        cout<<"level:"<< this->level<<endl;
     }
 
 
@@ -44,15 +59,29 @@ class Hero {
 
 int main(){
 
+
+    Hero S(70,'C');
+    S.print();
+
+    //Copy Constructor
+    Hero R(S);
+    R.print();
+
+
+
+
+
+
+
     //Object Created Statistically
-    Hero ramesh(10);
-    // cout<< "Address of ramesh "<< &ramesh<<endl;
-    // ramesh.getHealth(); 
+    // Hero ramesh(10);
+    // // cout<< "Address of ramesh "<< &ramesh<<endl;
+    // // ramesh.getHealth(); 
 
-    //Dynamically
-    Hero *h = new Hero();
+    // //Dynamically
+    // Hero *h = new Hero();
 
-    Hero(69,'B');
+    // Hero(69,'B');
 
 
 
