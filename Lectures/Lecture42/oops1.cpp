@@ -69,10 +69,6 @@ int main(){
 
 
 
-
-
-
-
     //Object Created Statistically
     // Hero ramesh(10);
     // // cout<< "Address of ramesh "<< &ramesh<<endl;
