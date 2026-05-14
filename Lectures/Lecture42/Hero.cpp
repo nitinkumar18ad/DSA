@@ -4,7 +4,8 @@ class Hero {
     
     private:
     int health;
-    char name[100];
     public:
+    char name[100];
+
     char level;
 };
