@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 // #include "Hero.cpp"
 using namespace std;
 
@@ -8,12 +9,14 @@ class Hero {
     private:
     int health;
     public:
+    char *name;
     char level;
 
 
     //Simple/Default Constructor
     Hero(){
         cout<<"Simple/Default Constructor Called"<<endl;
+        name = new char [100];
     }
 
 
@@ -31,14 +34,21 @@ class Hero {
 
     //Copy constructor
     Hero(Hero& temp){
+        char *ch = new char[strlen(temp.name)+1];
+        strcpy (ch,temp.name);
+        this -> name = ch;
+
         cout<<"Copy constructor called"<<endl;
         this -> health = temp.health;
         this -> level = temp.level;
     }
 
     void print(){
-        cout<<"Health:"<< this->health<<endl;
-        cout<<"level:"<< this->level<<endl;
+        cout<<"[";
+        cout<<"Name: "<< this->name<<",";
+        cout<<"Health:"<< this->health<<",";
+        cout<<"level:"<< this->level<<"]"<<endl;
+
     }
 
 
@@ -54,18 +64,40 @@ class Hero {
     void setLevel(char ch){
         level = ch;
     }
+    void setName(char name[]){
+        strcpy(this->name,name);
+    }
 
 };
 
 int main(){
 
+    Hero hero1;
+    hero1.setHealth(12);
+    hero1.setLevel('D');
+    char name[7] = "Babbar";
+    hero1.setName(name);
 
-    Hero S(70,'C');
-    S.print();
+    hero1.print();
 
-    //Copy Constructor
-    Hero R(S);
-    R.print();
+    Hero hero2(hero1);
+    hero2.print();
+
+    hero1.name[0]= 'G';
+    hero1.print();
+
+    hero2.print(); 
+
+
+
+
+
+    // Hero S(70,'C');
+    // S.print();
+
+    // //Copy Constructor
+    // Hero R(S);
+    // R.print();
 
 
     //Object Created Statistically
