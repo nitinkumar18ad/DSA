@@ -67,27 +67,45 @@ class Hero {
     void setName(char name[]){
         strcpy(this->name,name);
     }
+    ~Hero(){
+        cout<< "Destructor called"<<endl;
+    }
 
 };
 
 int main(){
 
-    Hero hero1;
-    hero1.setHealth(12);
-    hero1.setLevel('D');
-    
-    char name[7] = "Babbar";
-    hero1.setName(name);
 
-    hero1.print();
+    //Static
+    Hero a;
 
-    Hero hero2(hero1);
-    hero2.print();
 
-    hero1.name[0]= 'G';
-    hero1.print();
+    //Dynamic
+    Hero *b = new Hero();
 
-    hero2.print(); 
+    //Manually Destructor called
+    delete b;
+
+    // Hero hero1;
+    // hero1.setHealth(12);
+    // hero1.setLevel('D');
+
+    // char name[7] = "Babbar";
+    // hero1.setName(name);
+
+    // // hero1.print();
+
+    // Hero hero2(hero1);
+    // hero2.print();
+
+    // hero1.name[0]= 'G';
+    // hero1.print();
+
+    // // hero2.print(); 
+
+    // hero1 = hero2;
+    // hero1.print();
+    // hero2.print();
 
 
 
