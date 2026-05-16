@@ -75,6 +75,7 @@ int main(){
     Hero hero1;
     hero1.setHealth(12);
     hero1.setLevel('D');
+    
     char name[7] = "Babbar";
     hero1.setName(name);
 
