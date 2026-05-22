@@ -19,6 +19,6 @@ int main() {
     vector<int> nums = {7,4,1,5,3};
     cout<<"Bubble Sort:";
 
-    // bubble(nums);
+    bubble(nums);
     for(int x:nums) cout<<" "<< x;
 }
