@@ -20,7 +20,7 @@ vector<int> insertion(vector<int>& nums) {
 
 int main() {
     vector<int> nums = {7,4,1,5,3};
-    cout<<"Insertion Sort:";
+    cout<<"Insertion Sort: ";
 
     insertion(nums);
     for(int x:nums) cout<<" "<< x;
