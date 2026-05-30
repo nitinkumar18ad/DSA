@@ -3,27 +3,30 @@
 
 using namespace std;
 
-void bubble(vector<int>& nums,int n){
-    if(n==1)
-        return;
+void insertion(vector<int>& nums,int n){
+   if(n == 1) return;
 
-    for(int i = 0;i<n-1;i++){
-        if(nums[i]>nums[i+1]){
-            swap(nums[i],nums[i+1]);
-        }
-    }
-    bubble(nums,n-1);
+   insertion(nums,n-1);
+
+   int last = nums[n-1];
+   int j = n-2;
+
+   while(j>=0 && nums[j]>last){
+   nums[j+1] = nums[j];
+   j--;
+}
+nums[j+1] = last;
 }
 
-vector<int>bubbleSort(vector<int>& nums){
-    bubble(nums,nums.size());
+vector<int>insertionSort(vector<int>& nums){
+    insertion(nums,nums.size());
     return nums;
 }
 
 int main() {
     vector<int> nums = {7,4,1,5,3};
-    cout<<"Bubble Sort:";
+    cout<<"Insertion Sort:";
 
-    bubbleSort(nums);
+    insertionSort(nums);
     for(int x:nums) cout<<" "<< x;
 }
