@@ -10,6 +10,8 @@ using namespace std;
 //     return nums[nums.size()-2];
 // }
 
+
+//Optimal
 int SecLar(vector<int>& nums){
     int largest = nums[0];
     int secondlargest = largest;
