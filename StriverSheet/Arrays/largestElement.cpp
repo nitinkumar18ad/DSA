@@ -21,7 +21,6 @@ int largestElement(vector<int>& nums){
     }
     return largest;
 
-
 }
 
 int main(){
