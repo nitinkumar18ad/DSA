@@ -18,6 +18,6 @@ int missing(vector<int>& nums){
 }
 
 int main(){
-    vector<int> nums = {0,1,2,4};
+    vector<int> nums = {0,1,2,4,5};
     cout<<"Missing Number:"<<missing(nums);
 }
