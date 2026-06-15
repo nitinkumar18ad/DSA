@@ -20,6 +20,6 @@ int consecutive(vector<int>& nums){
 }
 
 int main() {
-    vector<int> nums = {1,0,1,1,1};
+    vector<int> nums = {1,0,1,1,0,1};
     cout<<"Number of Consucative:"<<consecutive(nums);
 }
