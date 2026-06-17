@@ -1,0 +1,27 @@
+#include<iostream>
+#include<vector>
+#include<climits>
+
+using namespace std;
+
+int kadane(vector<int>& nums){
+    int sum = 0;
+    int maxi = nums[0];
+
+    for(int i = 0;i<nums.size();i++){
+        sum += nums[i];
+        maxi = max(maxi,sum);
+
+        if(sum<0){
+            sum = 0;
+        }
+    }
+    return maxi;
+}
+
+int main(){
+    vector<int> nums = {4,5,8,1,2,4,1};
+
+    int ans = kadane(nums);
+    cout<<"Maximum subarray:"<<ans<<endl;
+}
