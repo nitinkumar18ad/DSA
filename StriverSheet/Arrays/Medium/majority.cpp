@@ -27,6 +27,6 @@ int majority(vector<int> &nums)
 }
 
 int main(){
-    vector<int> nums = {2,3,2,5,2,5,2};
+    vector<int> nums = {2,3,2,2,5,2,5};
     cout<<"Majority Element:"<< majority(nums);
 }
