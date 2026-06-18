@@ -20,7 +20,7 @@ int kadane(vector<int>& nums){
 }
 
 int main(){
-    vector<int> nums = {4,5,-8,1,2,-4,1};
+    vector<int> nums = {2,3,-1,4,6};
 
     int ans = kadane(nums);
     cout<<"Maximum subarray:"<<ans<<endl;

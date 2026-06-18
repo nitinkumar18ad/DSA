@@ -22,10 +22,10 @@ int longSubarr(vector<int>& nums,int k){
 int main() {
 
     vector<int> nums = {1, 2, 3, 1, 1, 1, 1};
-    int k = 6;
+    int k = 7;
 
     cout << "Length of longest subarray = "
-         << longSubarr(nums, k);
+         << longSubarr(nums,k);
 
     return 0;
 }
