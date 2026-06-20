@@ -36,7 +36,7 @@ void colorsort(vector<int>& nums){
 }
 
 int main(){
-    vector<int> nums = {1,2,0,1,0,2};
+    vector<int> nums = {1,2,0,1,0,2,4};
     
     colorsort(nums);
     for(int x: nums)
