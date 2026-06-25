@@ -19,7 +19,7 @@ vector<int> rearr(vector<int>& nums ){
             negIndex += 2;
         }
     }
-return ans;
+    return ans;
 }
 
 int main(){
