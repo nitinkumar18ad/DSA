@@ -20,6 +20,6 @@ int subarry(vector<int>& nums, int k){
 }
 
 int main(){
-    vector<int> nums = {4,2,-9,7,0};
+    vector<int> nums = {4,2,-9,7,0,8};
     cout<<"SubAray sum:"<<subarry(nums, 0);
 }
