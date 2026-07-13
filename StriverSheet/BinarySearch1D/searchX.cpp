@@ -24,8 +24,8 @@ int search(vector<int>& nums,int target){
 }
 
 int main(){
-    vector<int> nums = {1,5,9,3,7};
-    int target = 3;
+    vector<int> nums = {1,3,7,8,9};
+    int target = 9;
 
    cout<<"Target Element:"<<search(nums,target);
 }
