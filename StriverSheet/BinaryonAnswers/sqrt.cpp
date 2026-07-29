@@ -22,7 +22,7 @@ int sqrt(int n){
 
 int main(){
     int n = 27;
-    cout<<"Square Root:"<<sqrt(n);
+    cout<<"Square Root: "<<sqrt(n);
 
     return 0;
 }
