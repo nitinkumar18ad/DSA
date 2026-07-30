@@ -10,7 +10,7 @@ int sqrt(int n){
     while(low <= high){
         long long mid = low + (high-low)/2;
 
-        if(mid*mid <= n){
+        if(mid*mid<=n){
             ans = mid ;
             low = mid + 1;
         }else{
@@ -22,7 +22,7 @@ int sqrt(int n){
 
 int main(){
     int n = 27;
-    cout<<"Square Root: "<<sqrt(n);
+    cout<<"Square Root:"<<sqrt(n);
 
     return 0;
 }
