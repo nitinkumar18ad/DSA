@@ -4,7 +4,7 @@
 using namespace std;
 
 int sqrt(int n){
-    int low = 1, high = n;
+    int low = 1,high=n;
     int ans = 0;
 
     while(low <= high){
@@ -14,7 +14,7 @@ int sqrt(int n){
             ans = mid ;
             low = mid+1;
         }else{
-            high = mid-1;
+            high=mid-1;
         }
     }
     return ans;
