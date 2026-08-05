@@ -34,7 +34,7 @@ int main() {
 
     cin >> h;
     
-    cout << minEating(piles, h);
+    cout << minEating(piles,h);
 
     return 0;
 }
