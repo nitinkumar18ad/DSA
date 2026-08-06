@@ -30,9 +30,9 @@ int main() {
 
     vector<int> piles(n);
     for (int i = 0; i<n; i++)
-        cin >> piles[i];
+        cin >>piles[i];
 
-    cin >> h;
+    cin >>h;
     
     cout << minEating(piles,h);
 
