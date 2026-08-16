@@ -32,7 +32,7 @@ int FindMin(vector<int>& nums){
 int main(){
     vector<int> nums = {4,5,6,7,1,2};
 
-    cout<<"Find Minimum:"<<FindMin(nums);
+    cout<<"Find Minimum :"<<FindMin(nums);
 
     return 0;
 }
