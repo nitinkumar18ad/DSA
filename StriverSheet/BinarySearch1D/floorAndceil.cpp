@@ -38,7 +38,7 @@ int main(){
     vector<int> nums = {1,5,6,8,9,10,11,12};
     int x = 7;
     vector<int> result = floorAndceil(nums, x);
-    cout<<"Floor and Ceil: "<<result[0]<<" "<<result[1];
+    cout<<"Floor and Ceil:"<<result[0]<<" "<<result[1];
     
 
     return 0;
