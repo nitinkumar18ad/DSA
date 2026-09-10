@@ -25,7 +25,7 @@ int main(){
     if(isPalindrome(n))
         cout<<"Plaindrome";
     else
-        cout<<"NOt plainderome";
+        cout<<"Not plainderome";
 
     return 0;
 }
