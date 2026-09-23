@@ -7,18 +7,14 @@ int n = s.size();
 int left = 0;
 int right = n-1;
 
-for(int i =0;i<n;i++){
-if(s[left]== s[right] ){
-left++;
-right--;
-}
 while(left < right){
     if(s[left] != s[right]){
-        cout<<"Palindrome";
+        cout<<"Not palindrome";
+        return 0;
     }
-    else {
-        cout<<"NOT palindrome"<<endl;
-        }
+    left++;
+right--;
 }
-}
+cout<<"Plaindrome";
+
 }
