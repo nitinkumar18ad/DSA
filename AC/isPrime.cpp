@@ -18,3 +18,6 @@ int main(){
         cout<<"Non Prime"<<endl;
     }
 }
+
+
+

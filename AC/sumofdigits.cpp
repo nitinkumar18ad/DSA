@@ -21,4 +21,6 @@ int main(){
     cin>>n;
 
     cout<<sumofdigits(n);
+
+    return 0;
 }
