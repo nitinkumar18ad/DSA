@@ -5,8 +5,10 @@ using namespace std;
 int main(){
     int arr[] = {8,9,5,1,6};
     int size = 5;
+
     int smallest = INT_MAX;
     int largest = INT_MIN;
+    
     int minIdx = 0;
     int maxIdx = 0;
 
