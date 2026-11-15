@@ -10,6 +10,7 @@ int main(){
 
     for(int st =0;st<size;st++){
         int currSum = 0;
+        
         for(int end = st;end<size;end++){
             currSum += arr[end];
             maxSum = max(currSum,maxSum);
