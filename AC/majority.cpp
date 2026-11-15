@@ -23,4 +23,6 @@ int main(){
 
     cout<<majority(nums,n);
 
+    return 0;
+
 }
