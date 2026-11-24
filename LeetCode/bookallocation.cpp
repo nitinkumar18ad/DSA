@@ -47,7 +47,7 @@ int bookallocation(vector<int> &arr,int m,int n){
 
 int main(){
     vector<int> arr = {2,1,3,4};
-    int m = 4,n = arr.size();
+    int m = 2,n = arr.size();
 
     cout<<bookallocation(arr,m,n);
 
