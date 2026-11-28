@@ -1,18 +1,25 @@
-#include<iostream>
-#include<list>
+#include <iostream>
+#include <deque>
 using namespace std;
 
 int main(){
-    list<int> l;
+    // deque<int> d;
 
-    l.push_back(1);
-    l.push_back(2);
-    l.push_back(3);
-    l.push_back(4);
+    // d.push_back(1);
+    // d.push_back(2);
+    // d.push_back(3);
+    // d.push_back(4);
 
-    for(int val : l){
-        cout<<val<<" ";
-    }
+    // for(int val : d){
+    //     cout << val <<" ";
+    // }
+
+    // cout << d[2];
+
+    pair<int,int> p = {1,5};
+
+    cout<<p.first<<endl;
+    cout<<p.second<<endl;
 
     return 0;
 
